@@ -1,7 +1,7 @@
 # To be put under /jupyter/kernels/bacon
 # e.g. ~/.local/share/jupyter/kernels/bacon
 {
- "argv": ["/gpfs02/astro/workarea/anze/bacon/bin/python3", "-m", "IPython.kernel",
+ "argv": ["/gpfs02/astro/packages/bacon/2021.03/bin/python3", "-m", "ipykernel",
           "-f", "{connection_file}"],
  "display_name": "bacon (BNL Astro Conda)",
  "language": "python"
