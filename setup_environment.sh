@@ -24,7 +24,7 @@ for repo in $REPOS
     exit
   fi
   PACKAGE=`ls -1rt | tail -1`
-  $PIP install $PACKAGE/
+  $PIP install --no-deps $PACKAGE/
 }
 cd ..
 rm -rf build
