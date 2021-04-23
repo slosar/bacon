@@ -12,21 +12,9 @@ if [ $? -ne 0 ] ; then
    exit
 fi
 
-## install repos
-rm -rf build
-mkdir build
-cd build
 for repo in $REPOS
 {
-  git clone https://github.com/$repo.git
-  if [ $? -ne 0 ] ; then
-    echo "Failed to clone " $repo
-    exit
-  fi
-  PACKAGE=`ls -1rt | tail -1`
-  $PIP install --no-deps $PACKAGE/
+  $PIP install --no-deps git+https://github.com/$repo
 }
-cd ..
-rm -rf build
 
 
