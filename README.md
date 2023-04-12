@@ -4,8 +4,9 @@ Bacon is a set of scripts for local installation of conda environment at BNL.
 
 It is composed of two essential scripts:
 
- - `install_anaconda.sh` will install a vanilla anaconda environment
- - `setup_environment.sh` will additionally install set of of conda and githib packages. Can be safely rerun multiple times.
+ - `install_anaconda.sh` will install a vanilla anaconda environment. Run once (or clean)
+ - `setup_cons.sh` will additionally install set of of conda packages. Can be safely rerun multiple times.
+ - `setup_pip.sh` will additionally install set of of pip packages. Can be safely rerun multiple times.
 
 Things are setup in `settings.sh`.
 
