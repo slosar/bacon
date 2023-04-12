@@ -1,5 +1,4 @@
 #!/usr/bin/bash 
-
 source settings.sh
 CONDA=$TARGET/bin/conda
 PIP=$TARGET/bin/pip
